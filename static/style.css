@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e2eafc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background: rgba(178, 203, 234, 0.9); /* Use #1565c0 with slight transparency */
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+  width: 350px;
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: rgb(134, 98, 98);
+}
+
+p {
+  color: #916767;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  margin: 15px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border: none;
+  border-radius: 30px;
+  background: #e3f2fd; /* Lighter shade */
+  outline: none;
+}
+
+.toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #90a5bc;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #1565c0, #1976d2);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 14px;
+  color: #5728e3;;
+}
+
+.switch {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #23323c;
+}
+
+.switch a {
+  font-weight: 600;
+  color: #5728e3; /* Accent color */
+  text-decoration: none;
+}
+
+.socials {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials a {
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 8px 15px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  background: #f1f1f1;
+}
+
+.or {
+  margin-top: 15px;
+  color: #e3f2fd;
+}

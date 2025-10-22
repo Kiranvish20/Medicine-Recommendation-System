@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# VSCode
+.vscode/
+
+# Datasets and Models (avoid pushing large files)
+datasets/
+models/
+
+# OS files
+.DS_Store

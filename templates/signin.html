@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="/static/style.css">
+
+  <!-- Google Identity Services -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-box">
+    
+      <p>Sign in to your account</p>
+
+      <!-- Normal Sign In Form -->
+
+
+
+     <p class="switch">Don't have an account? <a href="/signup">Create</a></p>
+    </div>
+    <form id="signin-form" method="POST" action="/signin">
+      <div class="input-box">
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" placeholder="Password" required id="signin-password">
+        <span class="toggle" onclick="togglePassword('signin-password')">👁</span>
+      </div>
+      <p class="forgot"><a href="/forgot">Forgot your password?</a></p>
+      <button type="submit" class="btn">Sign in →</button>
+    </form>
+
+  </div>
+
+  <script src="/static/script.js"></script>
+
+</body>
+
+</html>
