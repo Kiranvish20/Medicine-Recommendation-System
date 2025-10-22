@@ -14,7 +14,7 @@ from sendgrid.helpers.mail import Mail
 from flask_bcrypt import Bcrypt # for password hashing
 
 app = Flask(__name__)
-app.secret_key = "super_secret_key"  # needed for session   it is pending to change
+app.secret_key = "" 
 
 bcrypt = Bcrypt(app) 
 s = URLSafeTimedSerializer(app.secret_key, salt='password-reset')
@@ -120,7 +120,7 @@ def signin():
 
 # --- CONFIGURATION (UPDATE THESE) ---
 os.environ['SENDGRID_API_KEY'] = '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'
-sender_email = 'kiranvis0303@gmail.com' 
+sender_email = 'kiranv0303@gmail.com' 
 your_website_domain = 'http://127.0.0.1:5000'
 
 @app.route('/forgot', methods=['GET', 'POST'])
@@ -397,4 +397,5 @@ def blog():
 # ---------------------- Run App ----------------------
 
 if __name__ == '__main__':
+
     app.run(debug=True)
